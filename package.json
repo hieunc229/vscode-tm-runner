@@ -1,0 +1,86 @@
+{
+  "name": "tm-runner",
+  "displayName": "TM Runner",
+  "description": "Click and run terminal commands in the editor",
+  "version": "0.0.6",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "publisher": "hieunc229",
+  "categories": [
+    "Snippets",
+    "Testing"
+  ],
+  "activationEvents": [
+    "onLanguage:tm",
+    "onLanguage:markdown"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "tmRunner.runAllCommands",
+        "title": "Run All Commands"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "tmRunner.runAllCommands",
+          "when": "editorLangId == tm"
+        },
+        {
+          "command": "tmRunner.runAllCommands",
+          "when": "editorLangId == markdown"
+        }
+      ]
+    },
+    "languages": [
+      {
+        "id": "tm",
+        "extensions": [
+          ".tm"
+        ],
+        "aliases": [
+          "TM",
+          "tm"
+        ]
+      },
+      {
+        "id": "markdown",
+        "extensions": [
+          ".md"
+        ],
+        "aliases": [
+          "Markdown",
+          "markdown"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2",
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
