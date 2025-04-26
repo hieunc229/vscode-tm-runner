@@ -2,7 +2,7 @@
   "name": "tm-runner",
   "displayName": "TM Runner",
   "description": "Click and run terminal commands in the editor",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.99.0"
   },
@@ -11,6 +11,10 @@
     "Snippets",
     "Testing"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hieunc229/vscode-tm-runner.git"
+  },
   "activationEvents": [
     "onLanguage:tm",
     "onLanguage:markdown"

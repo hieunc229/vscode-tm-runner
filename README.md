@@ -1,5 +1,7 @@
 # TM Runner
 
+[![Version](https://vsmarketplacebadges.dev/version/hieunc229.tm-runner.svg?&colorB=orange)](https://marketplace.visualstudio.com/items?itemName=hieunc229.tm-runner) [![Installs](https://vsmarketplacebadges.dev/installs/hieunc229.tm-runner.svg)](https://marketplace.visualstudio.com/items?itemName=hieunc229.tm-runner) [![Downloads](https://vsmarketplacebadges.dev/downloads/hieunc229.tm-runner.svg)](https://marketplace.visualstudio.com/items?itemName=hieunc229.tm-runner) [![Rating Short](https://vsmarketplacebadges.dev/rating-short/hieunc229.tm-runner.svg)](https://marketplace.visualstudio.com/items?itemName=hieunc229.tm-runner) [![Rating Star](https://vsmarketplacebadges.dev/rating-star/hieunc229.tm-runner.svg)](https://marketplace.visualstudio.com/items?itemName=hieunc229.tm-runner)
+
 Run commands inside Markdown .md or .tm files. This extension comes in handy when you often need to run commands on Terminal
 
 **Please run commands responsibly, I will not responsible for any issue caused by this extension**. Make sure the command is safe
