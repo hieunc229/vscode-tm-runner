@@ -4,6 +4,9 @@
 
 Run commands inside Markdown .md or .tm files. This extension comes in handy when you often need to run commands on Terminal
 
+
+![App Platorm](https://i.imgur.com/1Q62mJo.png)
+
 **Please run commands responsibly, I will not responsible for any issue caused by this extension**. Make sure the command is safe
 
 ## How to use
