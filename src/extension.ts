@@ -171,7 +171,7 @@ class TmCodeLensProvider implements vscode.CodeLensProvider {
       const range = new vscode.Range(startLine, 0, startLine, 0);
       lenses.push(
         new vscode.CodeLens(range, {
-          title: "▶ Run",
+          title: "▶ Run command",
           command: "tmRunner.runCommand",
           arguments: [startLine],
         })
